@@ -1,0 +1,7 @@
+com\findwise\IndexEntry.class
+com\findwise\InvertedIndexService.class
+com\findwise\Main.class
+com\findwise\SearchEngine.class
+com\findwise\Entry.class
+com\findwise\Engine.class
+com\findwise\MyFileReader.class

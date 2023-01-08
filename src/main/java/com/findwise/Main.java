@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Map<String, String> documentMap = MyFileReader.readFile("src/Documents.txt");
+        Map<String, String> documentMap = MyFileReader.readFile("C:\\Users\\MSI\\Desktop\\studia pjatk\\InvertedIndexSearch\\untitled\\src\\Documents.txt");
         InvertedIndexService indexService = new InvertedIndexService();
         for(String key : documentMap.keySet()) {
             indexService.addToInvertedIndex(key, documentMap.get(key));
