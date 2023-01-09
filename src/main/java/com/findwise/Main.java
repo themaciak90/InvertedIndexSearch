@@ -7,7 +7,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Map<String, String> documentMap = MyFileReader.readFile("C:\\Users\\MSI\\Desktop\\studia pjatk\\InvertedIndexSearch\\untitled\\src\\Documents.txt");
+        if(args.length == 0) {
+            System.out.println("Please provide path of documents file as a parameter");
+            return;
+        }
+        Map<String, String> documentMap = MyFileReader.readFile(args[0]);
         InvertedIndexService indexService = new InvertedIndexService();
         for(String key : documentMap.keySet()) {
             indexService.addToInvertedIndex(key, documentMap.get(key));
